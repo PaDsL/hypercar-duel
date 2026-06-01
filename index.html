@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hypercar Duel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="topbar" aria-label="Resumo do jogo">
+        <div>
+          <p class="eyebrow">Hypercar Duel</p>
+          <h1>Escolha seu hipercarro favorito</h1>
+        </div>
+        <div class="stats" aria-live="polite">
+          <span><strong id="timerDisplay">00:00</strong> tempo</span>
+          <span><strong id="roundCount">0</strong> rodadas</span>
+          <span><strong id="pendingCount">0</strong> pendentes</span>
+          <span><strong id="totalCount">0</strong> opções</span>
+        </div>
+      </section>
+
+      <section id="setupPanel" class="setup-panel">
+        <div>
+          <h2>Carregue a base de hipercarros</h2>
+          <p>
+            Selecione o arquivo Excel com as colunas Brand, Model, Version e
+            OVERALL SCORE (0-100).
+          </p>
+        </div>
+        <label class="file-control">
+          <input id="fileInput" type="file" accept=".xlsx" />
+          <span>Selecionar planilha .xlsx</span>
+        </label>
+        <p id="loadStatus" class="load-status"></p>
+      </section>
+
+      <section id="gamePanel" class="game-panel" hidden>
+        <div class="duel-grid" aria-live="polite">
+          <article id="optionA" class="car-card"></article>
+          <div class="versus">VS</div>
+          <article id="optionB" class="car-card"></article>
+        </div>
+
+        <div class="actions">
+          <button id="quitButton" class="secondary" type="button">Encerrar</button>
+          <button id="restartButton" class="secondary" type="button">Reiniciar</button>
+        </div>
+      </section>
+
+      <section id="resultPanel" class="result-panel" hidden>
+        <div class="result-header">
+          <p class="eyebrow">Resultado final</p>
+          <h2 id="winnerTitle"></h2>
+        </div>
+        <div class="result-metrics">
+          <div>
+            <span>Score final</span>
+            <strong id="winnerScore"></strong>
+          </div>
+          <div>
+            <span>Posição no ranking</span>
+            <strong id="winnerRank"></strong>
+          </div>
+          <div>
+            <span>Escolhas feitas</span>
+            <strong id="selectedTotal"></strong>
+          </div>
+          <div>
+            <span>Pendentes</span>
+            <strong id="finalPending"></strong>
+          </div>
+          <div>
+            <span>Tempo de jogo</span>
+            <strong id="finalTime"></strong>
+          </div>
+        </div>
+        <div class="score-breakdown">
+          <h3>Scores da opção final</h3>
+          <div id="scoreBreakdownGrid" class="score-grid"></div>
+        </div>
+        <div class="history-wrap">
+          <h3>Evolução das opções selecionadas</h3>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Rodada</th>
+                  <th>Marca</th>
+                  <th>Modelo</th>
+                  <th>Versão</th>
+                  <th>Rarity</th>
+                  <th>Power</th>
+                  <th>Speed</th>
+                  <th>Torque</th>
+                  <th>Value</th>
+                  <th>Overall</th>
+                </tr>
+              </thead>
+              <tbody id="historyRows"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="playAgainButton" type="button">Jogar novamente</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="hypercars-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
