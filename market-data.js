@@ -1,5 +1,5 @@
 window.MARKET_DATA = {
-  "generatedAt": "2026-06-01T18:54:07+00:00",
+  "generatedAt": "2026-06-01T23:52:19+00:00",
   "provider": "Alpha Vantage GLOBAL_QUOTE",
   "currencyNote": "O preço é exibido na moeda do instrumento listado.",
   "indicators": {
@@ -12,11 +12,11 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: controladora da Acura",
-      "price": 26.99,
-      "change": -0.3,
-      "changePercent": -1.0993,
-      "latestTradingDay": "2026-05-29",
-      "lastUpdated": "2026-06-01T18:52:21+00:00",
+      "price": 26.24,
+      "change": -0.75,
+      "changePercent": -2.7788,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:49:00+00:00",
       "status": "ok"
     },
     "Apollo": {
@@ -76,11 +76,11 @@ window.MARKET_DATA = {
       "currency": "GBX",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": 44.46,
-      "change": -4.06,
-      "changePercent": -8.3677,
-      "latestTradingDay": "2026-05-29",
-      "lastUpdated": "2026-06-01T18:52:34+00:00",
+      "price": 45.22,
+      "change": 0.76,
+      "changePercent": 1.7094,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:49:13+00:00",
       "status": "ok"
     },
     "Audi": {
@@ -92,11 +92,11 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: grupo controlador da Audi",
-      "price": 91.82,
-      "change": -0.74,
-      "changePercent": -0.7995,
-      "latestTradingDay": "2026-05-29",
-      "lastUpdated": "2026-06-01T18:52:47+00:00",
+      "price": 90.56,
+      "change": -1.26,
+      "changePercent": -1.3723,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:49:26+00:00",
       "status": "ok"
     },
     "BMW": {
@@ -108,11 +108,11 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": 74.76,
-      "change": -1.18,
-      "changePercent": -1.5539,
-      "latestTradingDay": "2026-05-29",
-      "lastUpdated": "2026-06-01T18:53:00+00:00",
+      "price": 73.72,
+      "change": -1.04,
+      "changePercent": -1.3911,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:49:41+00:00",
       "status": "ok"
     },
     "Bizzarrini": {
@@ -156,11 +156,11 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "proxy_shareholder",
       "relationLabel": "Proxy: acionista relevante da Bugatti Rimac",
-      "price": 46.89,
-      "change": -0.76,
-      "changePercent": -1.595,
-      "latestTradingDay": "2026-05-29",
-      "lastUpdated": "2026-06-01T18:53:13+00:00",
+      "price": 47.08,
+      "change": 0.19,
+      "changePercent": 0.4052,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:49:54+00:00",
       "status": "ok"
     },
     "Chevrolet": {
@@ -172,11 +172,11 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: controladora da Chevrolet",
-      "price": 83.24,
-      "change": -1.11,
-      "changePercent": -1.3159,
-      "latestTradingDay": "2026-05-29",
-      "lastUpdated": "2026-06-01T18:53:26+00:00",
+      "price": 82.68,
+      "change": -0.56,
+      "changePercent": -0.6728,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:50:07+00:00",
       "status": "ok"
     },
     "Czinger": {
@@ -300,11 +300,11 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": 340.23,
-      "change": -6.12,
-      "changePercent": -1.767,
-      "latestTradingDay": "2026-05-29",
-      "lastUpdated": "2026-06-01T18:53:40+00:00",
+      "price": 349.24,
+      "change": 9.01,
+      "changePercent": 2.6482,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:50:20+00:00",
       "status": "ok"
     },
     "Ford": {
@@ -316,11 +316,11 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": 17.44,
-      "change": 0.79,
-      "changePercent": 4.7447,
-      "latestTradingDay": "2026-05-29",
-      "lastUpdated": "2026-06-01T18:53:53+00:00",
+      "price": 16.63,
+      "change": -0.81,
+      "changePercent": -4.6445,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:50:33+00:00",
       "status": "ok"
     },
     "Glickenhaus": {
@@ -412,11 +412,11 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": 26.99,
-      "change": -0.3,
-      "changePercent": -1.0993,
-      "latestTradingDay": "2026-05-29",
-      "lastUpdated": "2026-06-01T18:54:06+00:00",
+      "price": 26.24,
+      "change": -0.75,
+      "changePercent": -2.7788,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:49:00+00:00",
       "status": "ok"
     },
     "Jaguar": {
@@ -433,8 +433,7 @@ window.MARKET_DATA = {
       "changePercent": null,
       "latestTradingDay": "",
       "lastUpdated": "",
-      "status": "rate_limited",
-      "error": "Thank you for using Alpha Vantage! Please consider spreading out your free API requests more sparingly (1 request per second). You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to lift the free key rate limit (25 requests per day), raise the per-second burst limit, and instantly unlock all premium endpoints"
+      "status": "no_quote"
     },
     "Koenigsegg": {
       "brand": "Koenigsegg",
@@ -477,13 +476,12 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: grupo controlador da Lamborghini",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "rate_limited",
-      "error": "Thank you for using Alpha Vantage! Please consider spreading out your free API requests more sparingly (1 request per second). You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to lift the free key rate limit (25 requests per day), raise the per-second burst limit, and instantly unlock all premium endpoints"
+      "price": 90.56,
+      "change": -1.26,
+      "changePercent": -1.3723,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:49:26+00:00",
+      "status": "ok"
     },
     "Lexus": {
       "brand": "Lexus",
@@ -494,13 +492,12 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: controladora da Lexus",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "rate_limited",
-      "error": "Thank you for using Alpha Vantage! Please consider spreading out your free API requests more sparingly (1 request per second). You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to lift the free key rate limit (25 requests per day), raise the per-second burst limit, and instantly unlock all premium endpoints"
+      "price": 182.92,
+      "change": -7.03,
+      "changePercent": -3.701,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:50:59+00:00",
+      "status": "ok"
     },
     "Lotus": {
       "brand": "Lotus",
@@ -511,13 +508,12 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "proxy_affiliated",
       "relationLabel": "Proxy: empresa listada associada à marca Lotus",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "rate_limited",
-      "error": "Thank you for using Alpha Vantage! Please consider spreading out your free API requests more sparingly (1 request per second). You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to lift the free key rate limit (25 requests per day), raise the per-second burst limit, and instantly unlock all premium endpoints"
+      "price": 1.33,
+      "change": 0.05,
+      "changePercent": 3.9063,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:51:12+00:00",
+      "status": "ok"
     },
     "Lykan": {
       "brand": "Lykan",
@@ -544,13 +540,12 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: controladora da Maserati",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "rate_limited",
-      "error": "Thank you for using Alpha Vantage! Please consider spreading out your free API requests more sparingly (1 request per second). You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to lift the free key rate limit (25 requests per day), raise the per-second burst limit, and instantly unlock all premium endpoints"
+      "price": 7.82,
+      "change": -0.16,
+      "changePercent": -2.005,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:51:25+00:00",
+      "status": "ok"
     },
     "McLaren": {
       "brand": "McLaren",
@@ -577,13 +572,12 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: controladora da Mercedes-AMG",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "rate_limited",
-      "error": "Thank you for using Alpha Vantage! Please consider spreading out your free API requests more sparingly (1 request per second). You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to lift the free key rate limit (25 requests per day), raise the per-second burst limit, and instantly unlock all premium endpoints"
+      "price": 51.44,
+      "change": -0.75,
+      "changePercent": -1.4371,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:51:38+00:00",
+      "status": "ok"
     },
     "Mercedes-Benz": {
       "brand": "Mercedes-Benz",
@@ -594,13 +588,12 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "rate_limited",
-      "error": "Thank you for using Alpha Vantage! Please consider spreading out your free API requests more sparingly (1 request per second). You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to lift the free key rate limit (25 requests per day), raise the per-second burst limit, and instantly unlock all premium endpoints"
+      "price": 51.44,
+      "change": -0.75,
+      "changePercent": -1.4371,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:51:38+00:00",
+      "status": "ok"
     },
     "Mosler": {
       "brand": "Mosler",
@@ -627,11 +620,11 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": 5.6,
-      "change": 0.05,
-      "changePercent": 0.9009,
-      "latestTradingDay": "2026-05-29",
-      "lastUpdated": "2026-06-01T18:54:07+00:00",
+      "price": 5.98,
+      "change": 0.38,
+      "changePercent": 6.7857,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:51:51+00:00",
       "status": "ok"
     },
     "Naran": {
@@ -675,13 +668,12 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "direct",
       "relationLabel": "Cotação ADR da fabricante",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "rate_limited",
-      "error": "Thank you for using Alpha Vantage! Please consider spreading out your free API requests more sparingly (1 request per second). You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to lift the free key rate limit (25 requests per day), raise the per-second burst limit, and instantly unlock all premium endpoints"
+      "price": 4.71,
+      "change": -0.29,
+      "changePercent": -5.8,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:52:04+00:00",
+      "status": "ok"
     },
     "Noble": {
       "brand": "Noble",
@@ -724,13 +716,12 @@ window.MARKET_DATA = {
       "currency": "INR",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: controladora da Pininfarina",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "rate_limited",
-      "error": "Thank you for using Alpha Vantage! Please consider spreading out your free API requests more sparingly (1 request per second). You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to lift the free key rate limit (25 requests per day), raise the per-second burst limit, and instantly unlock all premium endpoints"
+      "price": 2971.2,
+      "change": -63.6,
+      "changePercent": -2.0957,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:52:19+00:00",
+      "status": "ok"
     },
     "Porsche": {
       "brand": "Porsche",
@@ -741,13 +732,12 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "rate_limited",
-      "error": "Thank you for using Alpha Vantage! Please consider spreading out your free API requests more sparingly (1 request per second). You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to lift the free key rate limit (25 requests per day), raise the per-second burst limit, and instantly unlock all premium endpoints"
+      "price": 47.08,
+      "change": 0.19,
+      "changePercent": 0.4052,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:49:54+00:00",
+      "status": "ok"
     },
     "Praga": {
       "brand": "Praga",
@@ -902,13 +892,12 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "rate_limited",
-      "error": "Thank you for using Alpha Vantage! Please consider spreading out your free API requests more sparingly (1 request per second). You may subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to lift the free key rate limit (25 requests per day), raise the per-second burst limit, and instantly unlock all premium endpoints"
+      "price": 182.92,
+      "change": -7.03,
+      "changePercent": -3.701,
+      "latestTradingDay": "2026-06-01",
+      "lastUpdated": "2026-06-01T23:50:59+00:00",
+      "status": "ok"
     },
     "Tushek": {
       "brand": "Tushek",
