@@ -88,8 +88,10 @@ def fetch_alpha_vantage_quote(symbol, api_key):
     except Exception as exc:
         return {"status": "error", "error": str(exc)}
 
-    if "Note" in data or "Information" in data:
-        return {"status": "rate_limited", "error": data.get("Note") or data.get("Information")}
+    if "Note" in data:
+        return {"status": "temporary_unavailable", "error": data.get("Note")}
+    if "Information" in data:
+        return {"status": "temporary_unavailable", "error": data.get("Information")}
 
     quote = data.get("Global Quote") or {}
     if not quote:
