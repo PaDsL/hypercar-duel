@@ -29,23 +29,29 @@ def main():
         raise SystemExit("Defina o secret ALPHA_VANTAGE_API_KEY no GitHub antes de rodar.")
 
     mapping = json.loads(Path(args.map).read_text(encoding="utf-8"))
+    quote_symbols = unique_quote_symbols(mapping)
+    quote_cache = {}
+
+    if api_key:
+        for index, symbol in enumerate(quote_symbols):
+            quote_cache[symbol] = fetch_alpha_vantage_quote(symbol, api_key)
+            if index < len(quote_symbols) - 1:
+                time.sleep(args.pause_seconds)
+
     indicators = {}
-    quoteable = [item for item in mapping if item.get("quoteSymbol")]
+    for item in mapping:
+        brand = item["brand"]
+        symbol = item.get("quoteSymbol", "")
+        indicator = base_indicator(item)
 
-    for index, item in enumerate(mapping):
-      brand = item["brand"]
-      indicator = base_indicator(item)
+        if not symbol:
+            indicator.update({"status": "not_listed"})
+        elif not api_key:
+            indicator.update({"status": "missing_api_key"})
+        else:
+            indicator.update(quote_cache.get(symbol, {"status": "temporary_unavailable"}))
 
-      if not item.get("quoteSymbol"):
-          indicator.update({"status": "not_listed"})
-      elif not api_key:
-          indicator.update({"status": "missing_api_key"})
-      else:
-          indicator.update(fetch_alpha_vantage_quote(item["quoteSymbol"], api_key))
-          if index < len(quoteable) - 1:
-              time.sleep(args.pause_seconds)
-
-      indicators[brand] = indicator
+        indicators[brand] = indicator
 
     payload = {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -57,6 +63,7 @@ def main():
     print(f"Indicadores atualizados: {args.out}")
     print(f"Marcas mapeadas: {len(indicators)}")
     print(f"Marcas com ticker: {sum(1 for item in mapping if item.get('quoteSymbol'))}")
+    print(f"Tickers únicos consultados: {len(quote_symbols)}")
 
 
 def base_indicator(item):
@@ -75,6 +82,17 @@ def base_indicator(item):
         "latestTradingDay": "",
         "lastUpdated": "",
     }
+
+
+def unique_quote_symbols(mapping):
+    symbols = []
+    seen = set()
+    for item in mapping:
+        symbol = item.get("quoteSymbol", "").strip()
+        if symbol and symbol not in seen:
+            seen.add(symbol)
+            symbols.append(symbol)
+    return symbols
 
 
 def fetch_alpha_vantage_quote(symbol, api_key):
