@@ -190,6 +190,7 @@ function renderCard(target, car) {
       <span>Velocidade máxima<strong>${formatValue(car.topSpeedKmh, " km/h")}</strong></span>
       <span>Torque<strong>${formatValue(car.torqueNm, " Nm")}</strong></span>
     </div>
+    ${renderMarketIndicator(car)}
   `;
 
   const button = document.createElement("button");
@@ -229,6 +230,76 @@ function renderPhoto(car) {
 function formatValue(value, suffix = "") {
   if (value === null || value === undefined) return "N/D";
   return `${Number(value).toLocaleString("pt-BR", { maximumFractionDigits: 1 })}${suffix}`;
+}
+
+function renderMarketIndicator(car) {
+  const indicator = getMarketIndicator(car.brand);
+  if (!indicator) {
+    return `
+      <div class="market-panel market-neutral">
+        <span>Mercado da marca</span>
+        <strong>Sem indicador cadastrado</strong>
+        <small>Marca sem mapeamento de cotação/proxy.</small>
+      </div>
+    `;
+  }
+
+  const hasQuote = indicator.status === "ok" && indicator.price !== null && indicator.price !== undefined;
+  const tone = hasQuote ? getMarketTone(indicator.changePercent) : "neutral";
+  const ticker = indicator.displayTicker ? ` · ${escapeHtml(indicator.displayTicker)}` : "";
+  const quoteLine = hasQuote
+    ? `${formatMarketPrice(indicator.price, indicator.currency)} · ${formatMarketChange(indicator.changePercent)}`
+    : getMarketStatusText(indicator.status);
+  const date = indicator.latestTradingDay ? `Atualizado: ${escapeHtml(indicator.latestTradingDay)}` : "";
+
+  return `
+    <div class="market-panel market-${tone}">
+      <span>Mercado da marca</span>
+      <strong>${escapeHtml(indicator.marketEntity || car.brand)}${ticker}</strong>
+      <b>${quoteLine}</b>
+      <small>${escapeHtml(indicator.relationLabel || "")}${date ? ` · ${date}` : ""}</small>
+    </div>
+  `;
+}
+
+function getMarketIndicator(brand) {
+  return window.MARKET_DATA?.indicators?.[brand] || null;
+}
+
+function formatMarketPrice(value, currency) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return "N/D";
+  return `${currency || ""} ${number.toLocaleString("pt-BR", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  })}`.trim();
+}
+
+function formatMarketChange(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return "var. N/D";
+  const sign = number > 0 ? "+" : "";
+  return `${sign}${number.toLocaleString("pt-BR", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  })}%`;
+}
+
+function getMarketTone(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number) || number === 0) return "neutral";
+  return number > 0 ? "up" : "down";
+}
+
+function getMarketStatusText(status) {
+  const messages = {
+    missing_api_key: "Aguardando chave de API",
+    not_listed: "Sem cotação pública",
+    no_quote: "Cotação indisponível",
+    rate_limited: "Limite da API atingido",
+    error: "Erro ao atualizar cotação",
+  };
+  return messages[status] || "Aguardando atualização";
 }
 
 function updateCounters() {
