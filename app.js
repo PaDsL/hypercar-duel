@@ -295,9 +295,10 @@ function getMarketStatusText(status) {
   const messages = {
     missing_api_key: "Aguardando chave de API",
     not_listed: "Sem cotação pública",
-    no_quote: "Cotação indisponível",
-    rate_limited: "Limite da API atingido",
-    error: "Erro ao atualizar cotação",
+    no_quote: "Cotação temporariamente indisponível",
+    rate_limited: "Cotação temporariamente indisponível",
+    temporary_unavailable: "Cotação temporariamente indisponível",
+    error: "Cotação temporariamente indisponível",
   };
   return messages[status] || "Aguardando atualização";
 }
