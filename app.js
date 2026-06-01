@@ -246,12 +246,8 @@ function renderMarketIndicator(car) {
 
   const hasQuote = indicator.status === "ok" && indicator.price !== null && indicator.price !== undefined;
   const tone = hasQuote ? getMarketTone(indicator.changePercent) : "neutral";
-  const isProxy = indicator.relationType && !["direct", "private", "unavailable"].includes(indicator.relationType);
-  const title = isProxy ? car.brand : indicator.marketEntity || car.brand;
-  const ticker = !isProxy && indicator.displayTicker ? ` · ${escapeHtml(indicator.displayTicker)}` : "";
-  const source = isProxy
-    ? `Fonte proxy: ${escapeHtml(indicator.marketEntity || "N/D")}${indicator.displayTicker ? ` · ${escapeHtml(indicator.displayTicker)}` : ""}`
-    : "";
+  const indicatorType = getMarketIndicatorType(indicator);
+  const source = getMarketSourceText(indicator);
   const quoteLine = hasQuote
     ? `${formatMarketPrice(indicator.price, indicator.currency)} · ${formatMarketChange(indicator.changePercent)}`
     : getMarketStatusText(indicator.status);
@@ -261,7 +257,8 @@ function renderMarketIndicator(car) {
   return `
     <div class="market-panel market-${tone}">
       <span>Mercado da marca</span>
-      <strong>${escapeHtml(title)}${ticker}</strong>
+      <strong>${escapeHtml(car.brand)}</strong>
+      <em>${indicatorType}</em>
       <b>${quoteLine}</b>
       <small>${noteParts.join(" · ")}</small>
     </div>
@@ -270,6 +267,23 @@ function renderMarketIndicator(car) {
 
 function getMarketIndicator(brand) {
   return window.MARKET_DATA?.indicators?.[brand] || null;
+}
+
+function getMarketIndicatorType(indicator) {
+  if (indicator.relationType === "direct") return "Indicador: cotação direta";
+  if (indicator.relationType === "private" || indicator.relationType === "unavailable") {
+    return "Indicador: sem cotação pública";
+  }
+  return "Indicador: proxy de mercado";
+}
+
+function getMarketSourceText(indicator) {
+  if (!indicator.marketEntity) return "";
+  if (indicator.relationType === "private" || indicator.relationType === "unavailable") return "";
+
+  const label = indicator.relationType === "direct" ? "Fonte" : "Fonte proxy";
+  const ticker = indicator.displayTicker ? ` · ${escapeHtml(indicator.displayTicker)}` : "";
+  return `${label}: ${escapeHtml(indicator.marketEntity)}${ticker}`;
 }
 
 function formatMarketPrice(value, currency) {
