@@ -24,7 +24,7 @@ jobs:
         env:
           ALPHA_VANTAGE_API_KEY: ${{ secrets.ALPHA_VANTAGE_API_KEY }}
         run: |
-          python tools/update-market-data.py --out market-data.js --require-api-key
+          python update-market-data.py --map brand-market-map.json --out market-data.js --require-api-key
 
       - name: Publicar atualização
         run: |
