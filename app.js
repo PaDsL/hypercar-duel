@@ -246,18 +246,24 @@ function renderMarketIndicator(car) {
 
   const hasQuote = indicator.status === "ok" && indicator.price !== null && indicator.price !== undefined;
   const tone = hasQuote ? getMarketTone(indicator.changePercent) : "neutral";
-  const ticker = indicator.displayTicker ? ` · ${escapeHtml(indicator.displayTicker)}` : "";
+  const isProxy = indicator.relationType && !["direct", "private", "unavailable"].includes(indicator.relationType);
+  const title = isProxy ? car.brand : indicator.marketEntity || car.brand;
+  const ticker = !isProxy && indicator.displayTicker ? ` · ${escapeHtml(indicator.displayTicker)}` : "";
+  const source = isProxy
+    ? `Fonte proxy: ${escapeHtml(indicator.marketEntity || "N/D")}${indicator.displayTicker ? ` · ${escapeHtml(indicator.displayTicker)}` : ""}`
+    : "";
   const quoteLine = hasQuote
     ? `${formatMarketPrice(indicator.price, indicator.currency)} · ${formatMarketChange(indicator.changePercent)}`
     : getMarketStatusText(indicator.status);
   const date = indicator.latestTradingDay ? `Atualizado: ${escapeHtml(indicator.latestTradingDay)}` : "";
+  const noteParts = [source, indicator.relationLabel ? escapeHtml(indicator.relationLabel) : "", date].filter(Boolean);
 
   return `
     <div class="market-panel market-${tone}">
       <span>Mercado da marca</span>
-      <strong>${escapeHtml(indicator.marketEntity || car.brand)}${ticker}</strong>
+      <strong>${escapeHtml(title)}${ticker}</strong>
       <b>${quoteLine}</b>
-      <small>${escapeHtml(indicator.relationLabel || "")}${date ? ` · ${date}` : ""}</small>
+      <small>${noteParts.join(" · ")}</small>
     </div>
   `;
 }
