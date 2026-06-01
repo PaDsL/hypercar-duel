@@ -303,6 +303,14 @@ button.secondary {
   overflow-wrap: anywhere;
 }
 
+.market-panel em {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-style: normal;
+  font-size: 0.9rem;
+}
+
 .market-panel b {
   display: block;
   margin-top: 5px;
