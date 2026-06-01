@@ -1,13 +1,4 @@
-  --good: #43c59e;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-[hidden] {
-  display: none !important;
-}:root {
+:root {
   color-scheme: dark;
   --bg: #121416;
   --panel: #1d2226;
@@ -17,7 +8,16 @@
   --line: #3a444a;
   --accent: #f3c74f;
   --accent-strong: #e4563d;
+  --good: #43c59e;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
 
 body {
   margin: 0;
@@ -276,6 +276,65 @@ button.secondary {
   font-size: 1.02rem;
   text-transform: none;
   overflow-wrap: anywhere;
+}
+
+.market-panel {
+  margin-bottom: 22px;
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--muted);
+  border-radius: 8px;
+  background: rgba(38, 45, 50, 0.72);
+}
+
+.market-panel span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.market-panel strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--text);
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.market-panel b {
+  display: block;
+  margin-top: 5px;
+  color: var(--text);
+  font-size: 1.15rem;
+}
+
+.market-panel small {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.market-up {
+  border-left-color: var(--good);
+}
+
+.market-up b {
+  color: var(--good);
+}
+
+.market-down {
+  border-left-color: var(--accent-strong);
+}
+
+.market-down b {
+  color: #ff9b87;
+}
+
+.market-neutral {
+  border-left-color: var(--accent);
 }
 
 .pick-button {
