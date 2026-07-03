@@ -1,5 +1,5 @@
 window.MARKET_DATA = {
-  "generatedAt": "2026-07-02T23:37:03+00:00",
+  "generatedAt": "2026-07-03T23:35:37+00:00",
   "provider": "Alpha Vantage GLOBAL_QUOTE",
   "currencyNote": "O preço é exibido na moeda do instrumento listado.",
   "indicators": {
@@ -16,7 +16,7 @@ window.MARKET_DATA = {
       "change": 0.76,
       "changePercent": 2.788,
       "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:33:35+00:00",
+      "lastUpdated": "2026-07-03T23:32:16+00:00",
       "status": "ok"
     },
     "Apollo": {
@@ -76,11 +76,11 @@ window.MARKET_DATA = {
       "currency": "GBX",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": 39.08,
-      "change": -0.62,
-      "changePercent": -1.5617,
-      "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:33:51+00:00",
+      "price": 38.52,
+      "change": -0.56,
+      "changePercent": -1.433,
+      "latestTradingDay": "2026-07-03",
+      "lastUpdated": "2026-07-03T23:32:29+00:00",
       "status": "ok"
     },
     "Audi": {
@@ -92,11 +92,11 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: grupo controlador da Audi",
-      "price": 73.3,
-      "change": 3.36,
-      "changePercent": 4.8041,
-      "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:34:06+00:00",
+      "price": 74.66,
+      "change": 1.36,
+      "changePercent": 1.8554,
+      "latestTradingDay": "2026-07-03",
+      "lastUpdated": "2026-07-03T23:32:42+00:00",
       "status": "ok"
     },
     "BMW": {
@@ -108,11 +108,11 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": 60.2,
-      "change": 2.0,
-      "changePercent": 3.4364,
-      "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:34:20+00:00",
+      "price": 60.56,
+      "change": 0.36,
+      "changePercent": 0.598,
+      "latestTradingDay": "2026-07-03",
+      "lastUpdated": "2026-07-03T23:32:56+00:00",
       "status": "ok"
     },
     "Bizzarrini": {
@@ -156,12 +156,12 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "proxy_shareholder",
       "relationLabel": "Proxy: acionista relevante da Bugatti Rimac",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "no_quote"
+      "price": 45.97,
+      "change": 0.77,
+      "changePercent": 1.7035,
+      "latestTradingDay": "2026-07-03",
+      "lastUpdated": "2026-07-03T23:33:09+00:00",
+      "status": "ok"
     },
     "Chevrolet": {
       "brand": "Chevrolet",
@@ -176,7 +176,7 @@ window.MARKET_DATA = {
       "change": 0.48,
       "changePercent": 0.6356,
       "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:34:47+00:00",
+      "lastUpdated": "2026-07-03T23:33:22+00:00",
       "status": "ok"
     },
     "Czinger": {
@@ -304,7 +304,7 @@ window.MARKET_DATA = {
       "change": 10.31,
       "changePercent": 2.7518,
       "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:35:01+00:00",
+      "lastUpdated": "2026-07-03T23:33:35+00:00",
       "status": "ok"
     },
     "Ford": {
@@ -320,7 +320,7 @@ window.MARKET_DATA = {
       "change": -0.28,
       "changePercent": -2.0528,
       "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:35:14+00:00",
+      "lastUpdated": "2026-07-03T23:33:48+00:00",
       "status": "ok"
     },
     "Glickenhaus": {
@@ -416,7 +416,7 @@ window.MARKET_DATA = {
       "change": 0.76,
       "changePercent": 2.788,
       "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:33:35+00:00",
+      "lastUpdated": "2026-07-03T23:32:16+00:00",
       "status": "ok"
     },
     "Jaguar": {
@@ -476,11 +476,11 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: grupo controlador da Lamborghini",
-      "price": 73.3,
-      "change": 3.36,
-      "changePercent": 4.8041,
-      "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:34:06+00:00",
+      "price": 74.66,
+      "change": 1.36,
+      "changePercent": 1.8554,
+      "latestTradingDay": "2026-07-03",
+      "lastUpdated": "2026-07-03T23:32:42+00:00",
       "status": "ok"
     },
     "Lexus": {
@@ -496,7 +496,7 @@ window.MARKET_DATA = {
       "change": 4.93,
       "changePercent": 2.9058,
       "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:35:40+00:00",
+      "lastUpdated": "2026-07-03T23:34:15+00:00",
       "status": "ok"
     },
     "Lotus": {
@@ -512,7 +512,7 @@ window.MARKET_DATA = {
       "change": -0.03,
       "changePercent": -2.5,
       "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:35:53+00:00",
+      "lastUpdated": "2026-07-03T23:34:28+00:00",
       "status": "ok"
     },
     "Lykan": {
@@ -544,7 +544,7 @@ window.MARKET_DATA = {
       "change": 0.0,
       "changePercent": 0.0,
       "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:36:06+00:00",
+      "lastUpdated": "2026-07-03T23:34:41+00:00",
       "status": "ok"
     },
     "McLaren": {
@@ -572,12 +572,12 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: controladora da Mercedes-AMG",
-      "price": 44.825,
-      "change": 1.035,
-      "changePercent": 2.3636,
-      "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:36:21+00:00",
-      "status": "ok"
+      "price": null,
+      "change": null,
+      "changePercent": null,
+      "latestTradingDay": "",
+      "lastUpdated": "",
+      "status": "no_quote"
     },
     "Mercedes-Benz": {
       "brand": "Mercedes-Benz",
@@ -588,12 +588,12 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": 44.825,
-      "change": 1.035,
-      "changePercent": 2.3636,
-      "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:36:21+00:00",
-      "status": "ok"
+      "price": null,
+      "change": null,
+      "changePercent": null,
+      "latestTradingDay": "",
+      "lastUpdated": "",
+      "status": "no_quote"
     },
     "Mosler": {
       "brand": "Mosler",
@@ -624,7 +624,7 @@ window.MARKET_DATA = {
       "change": -0.18,
       "changePercent": -3.6217,
       "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:36:34+00:00",
+      "lastUpdated": "2026-07-03T23:35:09+00:00",
       "status": "ok"
     },
     "Naran": {
@@ -672,7 +672,7 @@ window.MARKET_DATA = {
       "change": 0.04,
       "changePercent": 1.0444,
       "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:36:47+00:00",
+      "lastUpdated": "2026-07-03T23:35:22+00:00",
       "status": "ok"
     },
     "Noble": {
@@ -716,11 +716,11 @@ window.MARKET_DATA = {
       "currency": "INR",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: controladora da Pininfarina",
-      "price": 3173.25,
-      "change": 43.45,
-      "changePercent": 1.3883,
-      "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:37:03+00:00",
+      "price": 3137.9,
+      "change": -35.35,
+      "changePercent": -1.114,
+      "latestTradingDay": "2026-07-03",
+      "lastUpdated": "2026-07-03T23:35:37+00:00",
       "status": "ok"
     },
     "Porsche": {
@@ -732,12 +732,12 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "no_quote"
+      "price": 45.97,
+      "change": 0.77,
+      "changePercent": 1.7035,
+      "latestTradingDay": "2026-07-03",
+      "lastUpdated": "2026-07-03T23:33:09+00:00",
+      "status": "ok"
     },
     "Praga": {
       "brand": "Praga",
@@ -896,7 +896,7 @@ window.MARKET_DATA = {
       "change": 4.93,
       "changePercent": 2.9058,
       "latestTradingDay": "2026-07-02",
-      "lastUpdated": "2026-07-02T23:35:40+00:00",
+      "lastUpdated": "2026-07-03T23:34:15+00:00",
       "status": "ok"
     },
     "Tushek": {
