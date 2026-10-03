@@ -1,5 +1,5 @@
 window.MARKET_DATA = {
-  "generatedAt": "2026-10-02T01:47:15+00:00",
+  "generatedAt": "2026-10-03T01:18:53+00:00",
   "provider": "Alpha Vantage GLOBAL_QUOTE",
   "currencyNote": "O preço é exibido na moeda do instrumento listado.",
   "indicators": {
@@ -12,11 +12,11 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: controladora da Acura",
-      "price": 31.62,
-      "change": 0.02,
-      "changePercent": 0.0633,
-      "latestTradingDay": "2026-10-01",
-      "lastUpdated": "2026-10-02T01:44:00+00:00",
+      "price": 31.35,
+      "change": -0.27,
+      "changePercent": -0.8539,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:15:36+00:00",
       "status": "ok"
     },
     "Apollo": {
@@ -76,11 +76,11 @@ window.MARKET_DATA = {
       "currency": "GBX",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": 33.76,
-      "change": -0.74,
-      "changePercent": -2.1449,
-      "latestTradingDay": "2026-10-01",
-      "lastUpdated": "2026-10-02T01:44:13+00:00",
+      "price": 34.24,
+      "change": 0.48,
+      "changePercent": 1.4218,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:15:49+00:00",
       "status": "ok"
     },
     "Audi": {
@@ -92,13 +92,12 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: grupo controlador da Audi",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 67.48,
+      "change": -0.54,
+      "changePercent": -0.7939,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:16:02+00:00",
+      "status": "ok"
     },
     "BMW": {
       "brand": "BMW",
@@ -109,13 +108,12 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 54.32,
+      "change": -0.5,
+      "changePercent": -0.9121,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:16:15+00:00",
+      "status": "ok"
     },
     "Bizzarrini": {
       "brand": "Bizzarrini",
@@ -158,13 +156,12 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "proxy_shareholder",
       "relationLabel": "Proxy: acionista relevante da Bugatti Rimac",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 43.0,
+      "change": -0.02,
+      "changePercent": -0.0465,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:16:28+00:00",
+      "status": "ok"
     },
     "Chevrolet": {
       "brand": "Chevrolet",
@@ -175,13 +172,12 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: controladora da Chevrolet",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 78.27,
+      "change": -1.04,
+      "changePercent": -1.3113,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:16:42+00:00",
+      "status": "ok"
     },
     "Czinger": {
       "brand": "Czinger",
@@ -304,13 +300,12 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 388.33,
+      "change": 1.03,
+      "changePercent": 0.2659,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:16:55+00:00",
+      "status": "ok"
     },
     "Ford": {
       "brand": "Ford",
@@ -321,13 +316,12 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 12.1,
+      "change": -0.17,
+      "changePercent": -1.3855,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:17:08+00:00",
+      "status": "ok"
     },
     "Glickenhaus": {
       "brand": "Glickenhaus",
@@ -418,11 +412,11 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": 31.62,
-      "change": 0.02,
-      "changePercent": 0.0633,
-      "latestTradingDay": "2026-10-01",
-      "lastUpdated": "2026-10-02T01:44:00+00:00",
+      "price": 31.35,
+      "change": -0.27,
+      "changePercent": -0.8539,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:15:36+00:00",
       "status": "ok"
     },
     "Jaguar": {
@@ -439,8 +433,7 @@ window.MARKET_DATA = {
       "changePercent": null,
       "latestTradingDay": "",
       "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "status": "no_quote"
     },
     "Koenigsegg": {
       "brand": "Koenigsegg",
@@ -483,13 +476,12 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: grupo controlador da Lamborghini",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 67.48,
+      "change": -0.54,
+      "changePercent": -0.7939,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:16:02+00:00",
+      "status": "ok"
     },
     "Lexus": {
       "brand": "Lexus",
@@ -500,13 +492,12 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: controladora da Lexus",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 181.49,
+      "change": -1.85,
+      "changePercent": -1.0091,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:17:34+00:00",
+      "status": "ok"
     },
     "Lotus": {
       "brand": "Lotus",
@@ -517,13 +508,12 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "proxy_affiliated",
       "relationLabel": "Proxy: empresa listada associada à marca Lotus",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 0.8528,
+      "change": 0.0325,
+      "changePercent": 3.962,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:17:47+00:00",
+      "status": "ok"
     },
     "Lykan": {
       "brand": "Lykan",
@@ -550,13 +540,12 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: controladora da Maserati",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 4.4,
+      "change": -0.29,
+      "changePercent": -6.1834,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:18:00+00:00",
+      "status": "ok"
     },
     "McLaren": {
       "brand": "McLaren",
@@ -583,13 +572,12 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: controladora da Mercedes-AMG",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 39.725,
+      "change": -0.335,
+      "changePercent": -0.8362,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:18:14+00:00",
+      "status": "ok"
     },
     "Mercedes-Benz": {
       "brand": "Mercedes-Benz",
@@ -600,13 +588,12 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 39.725,
+      "change": -0.335,
+      "changePercent": -0.8362,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:18:14+00:00",
+      "status": "ok"
     },
     "Mosler": {
       "brand": "Mosler",
@@ -633,13 +620,12 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 3.37,
+      "change": -0.03,
+      "changePercent": -0.8824,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:18:27+00:00",
+      "status": "ok"
     },
     "Naran": {
       "brand": "Naran",
@@ -682,13 +668,12 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "direct",
       "relationLabel": "Cotação ADR da fabricante",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 3.63,
+      "change": -0.12,
+      "changePercent": -3.2,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:18:40+00:00",
+      "status": "ok"
     },
     "Noble": {
       "brand": "Noble",
@@ -731,13 +716,12 @@ window.MARKET_DATA = {
       "currency": "INR",
       "relationType": "proxy_parent",
       "relationLabel": "Proxy: controladora da Pininfarina",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 2851.05,
+      "change": -96.35,
+      "changePercent": -3.269,
+      "latestTradingDay": "2026-10-01",
+      "lastUpdated": "2026-10-03T01:18:53+00:00",
+      "status": "ok"
     },
     "Porsche": {
       "brand": "Porsche",
@@ -748,13 +732,12 @@ window.MARKET_DATA = {
       "currency": "EUR",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 43.0,
+      "change": -0.02,
+      "changePercent": -0.0465,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:16:28+00:00",
+      "status": "ok"
     },
     "Praga": {
       "brand": "Praga",
@@ -909,13 +892,12 @@ window.MARKET_DATA = {
       "currency": "USD",
       "relationType": "direct",
       "relationLabel": "Cotação direta da fabricante",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "latestTradingDay": "",
-      "lastUpdated": "",
-      "status": "temporary_unavailable",
-      "error": "We have detected your API key as 8VH4NPAKCPYNNGQO and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans at https://www.alphavantage.co/premium/ to instantly remove all daily rate limits."
+      "price": 181.49,
+      "change": -1.85,
+      "changePercent": -1.0091,
+      "latestTradingDay": "2026-10-02",
+      "lastUpdated": "2026-10-03T01:17:34+00:00",
+      "status": "ok"
     },
     "Tushek": {
       "brand": "Tushek",
